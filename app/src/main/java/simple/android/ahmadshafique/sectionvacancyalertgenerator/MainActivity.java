@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
                     @Override
                     public void run() {
                                 /* This call inject JavaScript into the page which just finished loading. */
-                        myWebView.loadUrl("javascript:window.HTMLOUT.processHTML('<head>'+document.getElementsByTagName('html')[0].innerHTML+'</head>');");
+                        myWebView.loadUrl("javascript:window.HTMLOUT.processHTML('<table>'+document.getElementsByTagName('html')[0].innerHTML+'</table>');");
 
                     } // This is your code
                 };
@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 
             //String lowerCase = html.toLowerCase();
 
-            String input = html.toString();
+            //String input = html.toString();
             //writeToFile(input,this);
 
             //Pattern p = Pattern.compile(lowerCase);
